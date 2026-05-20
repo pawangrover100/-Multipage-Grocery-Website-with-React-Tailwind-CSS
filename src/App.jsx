@@ -1,9 +1,9 @@
 import React from 'react'
-import Narbar from './components/Navbar/Navbar.jsx'
+import Home from './components/Home/Home.jsx'
 
 function App() {
   return (
-   <Narbar />
+   <Home/>
   )
 }
 
