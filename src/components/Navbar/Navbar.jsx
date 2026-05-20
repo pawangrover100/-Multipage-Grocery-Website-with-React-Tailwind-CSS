@@ -57,7 +57,7 @@ function Navbar() {
               autoComplete="off"
               className="flex-1 h-[5vh] px-3 focus:outline-none"
             />
-            <button className="bg-orange-500 text-white rounded-full w-10 h-10  flex justify-center items-center text-xl ">
+            <button className="bg-gradient-to-b from-red-500 to-orange-500 text-white rounded-full w-10 h-10  flex justify-center items-center text-xl ">
             <IoSearch />
           </button>
           </div>
