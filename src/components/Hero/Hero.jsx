@@ -5,7 +5,7 @@ import Button from "../Button/Button";
 function Hero() {
   return (
     <section>
-      <div className="max-w-[1400px] mx-auto px-10 flex items-center pt-25 ">
+      <div className="min-h-screen max-w-[1400px]   mx-auto px-10 flex items-center pt-25 ">
         {/* hero contant */}
         <div className="flex-1">
           <span className="bg-orange-100 text-orange-500 text-lg px-5 py-2 rounded-full">
