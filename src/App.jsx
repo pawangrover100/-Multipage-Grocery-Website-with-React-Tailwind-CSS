@@ -1,9 +1,9 @@
 import React from 'react'
+import Narbar from './components/Navbar/Navbar.jsx'
 
 function App() {
   return (
-    <div>
-        <h1 className={'bg-red-300'}>hello</h1></div>
+   <Narbar />
   )
 }
 
