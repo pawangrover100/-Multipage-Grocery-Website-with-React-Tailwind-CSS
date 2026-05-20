@@ -24,6 +24,11 @@ function Navbar() {
             <a href="" className="font-semibold tracking-wider text-zinc-800  hover:text-orange-500">Contact us</a>
           </li>
         </ul>
+
+        {/* Nav Action */}
+        <div>
+          
+        </div>
       </nav>
     </header>
   );
