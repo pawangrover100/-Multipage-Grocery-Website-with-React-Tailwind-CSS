@@ -14,7 +14,7 @@ function Navbar() {
         </a>
 
         {/* Desktop menu */}
-        <ul className="flex items-center gap-x-15">
+        <ul className="md:flex items-center gap-x-15 hidden">
           <li>
             <a href="" className="font-semibold tracking-wider text-orange-500">
               Home
@@ -71,7 +71,7 @@ function Navbar() {
           </a>
 
           {/* hamburgger */}
-          <a href="" className="text-zinc-800  text-3xl">
+          <a href="" className="text-zinc-800  text-3xl md:hidden">
             <TbMenu2 />
           </a>
         </div>
