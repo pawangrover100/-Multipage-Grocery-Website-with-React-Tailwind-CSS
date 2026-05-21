@@ -2,7 +2,9 @@ import { useState } from "react";
 import { IoHeartSharp } from "react-icons/io5";
 import { HiShoppingBag } from "react-icons/hi2";
 import { IoSearch } from "react-icons/io5";
-import { TbMenu2 } from "react-icons/tb";
+import { TbMenu2,TbMenu3 } from "react-icons/tb";
+
+
 
 function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
@@ -81,7 +83,7 @@ function Navbar() {
             className="text-zinc-800 text-3xl md:hidden"
             onClick={toggleMenu}
           >
-            <TbMenu2 />
+            {showMenu? <TbMenu3 />:<TbMenu2 />}
           </button>
         </div>
 
