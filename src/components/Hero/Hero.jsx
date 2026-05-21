@@ -1,4 +1,4 @@
-import React from "react";
+
 import Grocery from "../../assets/Grocery Website Assets/grocery.png";
 import Button from "../Button/Button";
 
@@ -12,9 +12,9 @@ function Hero() {
             Export Best Quality...
           </span>
           <h1 className="md:text-7xl/20 text-5xl/14 font-bold mt-4">
-            Tasty Organic <span className="text-orange-500 ">Fruits</span> & <span className="text-orange-500 ">Vaggies</span> <br />in your city
+            Tasty Organic <span className="text-orange-500 ">Fruits</span> & <span className="text-orange-500 ">Veggies</span> <br />in your city
           </h1>
-          <p className="text-zinc-600 md:text-lg  text:md max-w-132.5 mt-5 mb-10">
+          <p className="text-zinc-600 md:text-lg  text-md max-w-132.5 mt-5 mb-10">
             Bred for a high content of beneficial substances. Our products are all fresh and healthy.
           </p>
           <Button content="Shop Now"/>
