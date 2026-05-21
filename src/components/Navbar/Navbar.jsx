@@ -7,7 +7,7 @@ import { TbMenu2 } from "react-icons/tb";
 function Navbar() {
   return (
     <header className="bg-white fixed top-0 right-0 left-0 ">
-      <nav className="max-w-[1400px] mx-auto px-10 h-[14vh] items-center flex justify-between">
+      <nav className="max-w-[1400px] mx-auto px-10 md:h-[14vh] h-[12vh] items-center flex justify-between">
         {/* logo */}
         <a href="" className="text-3xl font-semibold">
           Gr<span className="text-orange-400  uppercase">o</span>cify
