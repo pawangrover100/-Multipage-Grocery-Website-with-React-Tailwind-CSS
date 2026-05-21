@@ -49,7 +49,7 @@ function Navbar() {
         {/* Nav Action */}
         <div className="flex items-center gap-x-5">
           {/* Search button */}
-          <div className="flex p-1 border-2 border-orange-500 rounded-full">
+          <div className="md:flex hidden p-1 border-2 border-orange-500 rounded-full">
             <input
               type="text"
               name="text"
