@@ -15,7 +15,7 @@ function Navbar() {
 
   return (
     <header className="bg-white fixed top-0 right-0 left-0 ">
-      <nav className="max-w-[1400px] mx-auto px-10 md:h-[14vh] h-[12vh] items-center flex justify-between">
+      <nav className="max-w-350 mx-auto px-10 md:h-[14vh] h-[12vh] items-center flex justify-between">
         {/* logo */}
         <a href="#" className="text-3xl font-semibold">
           Gr<span className="text-orange-400  uppercase">o</span>cify
@@ -66,7 +66,7 @@ function Navbar() {
               autoComplete="off"
               className="flex-1 h-[5vh] px-3 focus:outline-none"
             />
-            <button className="bg-gradient-to-b from-red-500 to-orange-500 text-white rounded-full w-10 h-10  flex justify-center items-center text-xl ">
+            <button className="bg-liner-to-b from-red-500 to-orange-500 text-white rounded-full w-10 h-10  flex justify-center items-center text-xl ">
               <IoSearch />
             </button>
           </div>
@@ -89,7 +89,7 @@ function Navbar() {
 
         {/* mobile menu */}
         <ul
-          className={`z-50 flex flex-col gap-y-10 bg-orange-500/15 backdrop-blur-xl rounded-xl p-10 items-center gap-x-12 md:hidden absolute top-[120px] transition-all duration-500 ${
+          className={`z-50 flex flex-col gap-y-10 bg-orange-500/15 backdrop-blur-xl rounded-xl p-10 items-center gap-x-12 md:hidden absolute top-30 transition-all duration-500 ${
             showMenu ? "left-1/2 -translate-x-1/2" : "-left-full"
           }`}
         >
@@ -131,7 +131,7 @@ function Navbar() {
               autoComplete="off"
               className="flex-1 h-[5vh] px-3 focus:outline-none"
             />
-            <button className="bg-gradient-to-b from-red-500 to-orange-500 text-white rounded-full w-10 h-10  flex justify-center items-center text-xl ">
+            <button className="bg-liner-to-b from-red-500 to-orange-500 text-white rounded-full w-10 h-10  flex justify-center items-center text-xl ">
               <IoSearch />
             </button>
           </li>
