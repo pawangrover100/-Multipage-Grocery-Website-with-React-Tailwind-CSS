@@ -2,6 +2,7 @@ import React from "react";
 import { IoHeartSharp } from "react-icons/io5";
 import { HiShoppingBag } from "react-icons/hi2";
 import { IoSearch } from "react-icons/io5";
+import { TbMenu2 } from "react-icons/tb";
 
 function Navbar() {
   return (
@@ -58,15 +59,20 @@ function Navbar() {
               className="flex-1 h-[5vh] px-3 focus:outline-none"
             />
             <button className="bg-gradient-to-b from-red-500 to-orange-500 text-white rounded-full w-10 h-10  flex justify-center items-center text-xl ">
-            <IoSearch />
-          </button>
+              <IoSearch />
+            </button>
           </div>
-          
+
           <a href="" className="text-2xl text-zinc-800">
             <IoHeartSharp />
           </a>
           <a href="" className="text-2xl text-zinc-800">
             <HiShoppingBag />
+          </a>
+
+          {/* hamburgger */}
+          <a href="" className="text-zinc-800  text-3xl">
+            <TbMenu2 />
           </a>
         </div>
       </nav>
