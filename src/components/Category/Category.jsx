@@ -3,7 +3,7 @@ import React from 'react'
 function Category() {
   return (
    <section>
-    <div>
+    <div className='py-20'>
         
     </div>
    </section>
