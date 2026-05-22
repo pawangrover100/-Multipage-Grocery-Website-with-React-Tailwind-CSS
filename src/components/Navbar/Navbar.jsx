@@ -1,20 +1,28 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IoHeartSharp } from "react-icons/io5";
 import { HiShoppingBag } from "react-icons/hi2";
 import { IoSearch } from "react-icons/io5";
-import { TbMenu2,TbMenu3 } from "react-icons/tb";
-
-
+import { TbMenu2, TbMenu3 } from "react-icons/tb";
 
 function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleMenu = () => {
-    setShowMenu((prev) => !prev)
+    setShowMenu((prev) => !prev);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return ()=>window.removeEventListener("scroll", handleScroll);
+  });
   return (
-    <header className="bg-white fixed top-0 right-0 left-0 z-50">
+    <header
+      className={`bg-white fixed top-0 right-0 left-0 z-50   ${isScrolled ?'drop-shadow-[0_4px_25px_rgba(0,0,0,0.08)]': ''}`}
+    >
       <nav className="max-w-350 mx-auto px-10 md:h-[14vh] h-[12vh] items-center flex justify-between">
         {/* logo */}
         <a href="#" className="text-3xl font-semibold">
@@ -24,7 +32,10 @@ function Navbar() {
         {/* Desktop menu */}
         <ul className="md:flex items-center gap-x-10 hidden">
           <li>
-            <a href="#" className="font-semibold tracking-wider text-orange-500">
+            <a
+              href="#"
+              className="font-semibold tracking-wider text-orange-500"
+            >
               Home
             </a>
           </li>
@@ -83,17 +94,21 @@ function Navbar() {
             className="text-zinc-800 text-3xl md:hidden"
             onClick={toggleMenu}
           >
-            {showMenu? <TbMenu3 />:<TbMenu2 />}
+            {showMenu ? <TbMenu3 /> : <TbMenu2 />}
           </button>
         </div>
 
         {/* mobile menu */}
-        <ul className={`z-50 flex flex-col gap-y-10 bg-orange-500/15 shadow-xl backdrop-blur-xl rounded-xl p-10 items-center gap-x-12 md:hidden absolute top-30 transition-all duration-500 ${
+        <ul
+          className={`z-50 flex flex-col gap-y-10 bg-orange-500/15 shadow-xl backdrop-blur-xl rounded-xl p-10 items-center gap-x-12 md:hidden absolute top-30 transition-all duration-500 ${
             showMenu ? "left-1/2 -translate-x-1/2" : "-left-full"
           }`}
         >
           <li>
-            <a href="#" className="font-semibold tracking-wider text-orange-500">
+            <a
+              href="#"
+              className="font-semibold tracking-wider text-orange-500"
+            >
               Home
             </a>
           </li>
