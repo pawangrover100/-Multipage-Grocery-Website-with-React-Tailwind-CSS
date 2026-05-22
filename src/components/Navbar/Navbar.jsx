@@ -14,7 +14,7 @@ function Navbar() {
   };
 
   return (
-    <header className="bg-white fixed top-0 right-0 left-0 ">
+    <header className="bg-white fixed top-0 right-0 left-0 z-50">
       <nav className="max-w-350 mx-auto px-10 md:h-[14vh] h-[12vh] items-center flex justify-between">
         {/* logo */}
         <a href="#" className="text-3xl font-semibold">

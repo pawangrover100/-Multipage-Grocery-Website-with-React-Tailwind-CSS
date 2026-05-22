@@ -32,7 +32,9 @@ function Category() {
 
   const renderCards = category.map((card) => {
     return (
-      <div className="flex-1">
+
+      // card
+      <div className="flex-1 basis-[300px]">
         {/* card image */}
         <div className="w-full min-h-[30vh] relative -mb-10">
           <img src={card.image} className="absolute bottom-0" />
@@ -52,9 +54,9 @@ function Category() {
       <div className="max-w-[1400px] mx-auto px-10 py-20">
         <Heading highlight="Shop" heading="By Category" />
 
-        {/* Category Cary */}
+        {/* Category Card */}
 
-        <div className="flex gap-10 mt-15">{renderCards}</div>
+        <div className="flex flex-wrap gap-10 mt-15">{renderCards}</div>
       </div>
     </section>
   );
