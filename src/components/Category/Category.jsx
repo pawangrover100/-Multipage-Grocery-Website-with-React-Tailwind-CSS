@@ -5,7 +5,7 @@ function Category() {
   return (
     <section>
       <div className="py-20">
-      <Heading />
+      <Heading highlight="Shop" heading="By Category"/>
       </div>
     </section>
   );
