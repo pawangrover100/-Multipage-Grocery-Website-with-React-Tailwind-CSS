@@ -56,7 +56,7 @@ function Category() {
 
         {/* Category Card */}
 
-        <div className="flex flex-wrap gap-10 mt-15">{renderCards}</div>
+        <div className="flex flex-wrap gap-10 md:mt-15 ">{renderCards}</div>
       </div>
     </section>
   );
