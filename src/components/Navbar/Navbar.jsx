@@ -88,8 +88,7 @@ function Navbar() {
         </div>
 
         {/* mobile menu */}
-        <ul
-          className={`z-50 flex flex-col gap-y-10 bg-orange-500/15 backdrop-blur-xl rounded-xl p-10 items-center gap-x-12 md:hidden absolute top-30 transition-all duration-500 ${
+        <ul className={`z-50 flex flex-col gap-y-10 bg-orange-500/15 shadow-xl backdrop-blur-xl rounded-xl p-10 items-center gap-x-12 md:hidden absolute top-30 transition-all duration-500 ${
             showMenu ? "left-1/2 -translate-x-1/2" : "-left-full"
           }`}
         >
