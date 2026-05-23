@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import Heading from "../Heading/Heading";
-import ProductsList from '../../components/ProductsList/ProductsList.js'
+import ProductsList from "../../components/ProductsList/ProductsList.js";
 
 function Products() {
   const categories = ["All", "Fruits", "Vegetables", "Dairy", "SeaFood"];
   const [activeTab, setActiveTab] = useState("All");
+  
+  
 
   return (
     <div>
@@ -19,10 +21,11 @@ function Products() {
                 key={category}
                 onClick={() => setActiveTab(category)}
                 className={`px-5 py-2 text-lg  rounded-lg cursor-pointer
-                  ${activeTab === category
-                    ? "bg-gradient-to-b from-orange-400 to-orange-500 text-white"
-                    : "bg-zinc-100 text-black"
-                }`}
+                  ${
+                    activeTab === category
+                      ? "bg-gradient-to-b from-orange-400 to-orange-500 text-white"
+                      : "bg-zinc-100 text-black"
+                  }`}
               >
                 {category}
               </button>
