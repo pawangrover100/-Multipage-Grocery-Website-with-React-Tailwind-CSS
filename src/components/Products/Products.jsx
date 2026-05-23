@@ -17,8 +17,8 @@ function Products() {
               <button
                 key={category}
                 onClick={() => setActiveTab(category)}
-                className={`px-5 py-2 text-lg ${
-                  activeTab === category
+                className={`px-5 py-2 text-lg  rounded-lg cursor-pointer
+                  ${activeTab === category
                     ? "bg-gradient-to-b from-orange-400 to-orange-500 text-white"
                     : "bg-zinc-100 text-black"
                 }`}
