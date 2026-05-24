@@ -1,12 +1,18 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Heading from "../Heading/Heading";
-import ProductsList from "../../components/ProductsList/ProductsList.js";
+import ProductsList from "../ProductsList/ProductsList.js";
+import Cards from "../Cards/Cards.jsx";
 
 function Products() {
   const categories = ["All", "Fruits", "Vegetables", "Dairy", "SeaFood"];
   const [activeTab, setActiveTab] = useState("All");
-  
-  
+
+  const renderCards = ProductsList.slice(0,8).map((product) => {
+    return(
+       <Cards  key={product.id} 
+       image={product.image}  name={product.name} price={product.price}/>
+       )
+  });
 
   return (
     <div>
@@ -32,6 +38,8 @@ function Products() {
             );
           })}
         </div>
+        {/* Products listing */}
+        <div className="grid grid-cols-4 gap-9 mt-20">{renderCards}</div>
       </section>
     </div>
   );
