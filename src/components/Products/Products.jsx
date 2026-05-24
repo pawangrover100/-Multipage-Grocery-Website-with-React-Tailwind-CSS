@@ -25,7 +25,7 @@ function Products() {
         <Heading highlight="Our" heading="Products" />
 
         {/* tabs */}
-        <div className="flex gap-10 justify-center mt-10">
+        <div className="flex flex-wrap gap-10 justify-center mt-10">
           {categories.map((category) => {
             return (
               <button
@@ -44,7 +44,7 @@ function Products() {
           })}
         </div>
         {/* Products listing */}
-        <div className="grid grid-cols-4 gap-9 mt-20">{renderCards}</div>
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-9 mt-20">{renderCards}</div>
         <div className="mt-15 mx-auto w-fit">
           <Button  content="view all"/>
         </div>
