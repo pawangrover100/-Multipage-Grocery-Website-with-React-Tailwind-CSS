@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import Heading from "../Heading/Heading";
 
 function Process() {
   return (
-    <div>Process</div>
-  )
+    <section>
+      <div className="max-w-[1400px] mx-auto px-10 py-20">
+        <Heading highlight="Our" heading="Process"/>
+      </div>
+    </section>
+  );
 }
 
-export default Process
+export default Process;
