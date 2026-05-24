@@ -2,6 +2,7 @@ import { useState } from "react";
 import Heading from "../Heading/Heading";
 import ProductsList from "../ProductsList/ProductsList.js";
 import Cards from "../Cards/Cards.jsx";
+import Button from "../Button/Button.jsx";
 
 function Products() {
   const categories = ["All", "Fruits", "Vegetables", "Dairy", "SeaFood"];
@@ -40,6 +41,9 @@ function Products() {
         </div>
         {/* Products listing */}
         <div className="grid grid-cols-4 gap-9 mt-20">{renderCards}</div>
+        <div className="mt-15 mx-auto w-fit">
+          <Button  content="view all"/>
+        </div>
       </section>
     </div>
   );
