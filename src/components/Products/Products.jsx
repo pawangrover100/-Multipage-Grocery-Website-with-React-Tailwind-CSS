@@ -8,7 +8,11 @@ function Products() {
   const categories = ["All", "Fruits", "Vegetables", "Dairy", "SeaFood"];
   const [activeTab, setActiveTab] = useState("All");
 
-  const renderCards = ProductsList.slice(0,8).map((product) => {
+  let  filteredItem= activeTab ==="All" ? ProductsList : ProductsList.filter(item=> item.category ===activeTab)
+
+
+
+  const renderCards =filteredItem.slice(0,8).map((product) => {
     return(
        <Cards  key={product.id} 
        image={product.image}  name={product.name} price={product.price}/>
