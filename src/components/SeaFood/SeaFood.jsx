@@ -1,8 +1,9 @@
 import React from 'react'
+import Banner from '../Banner/Banner'
 
 function SeaFood() {
   return (
-    <div>SeaFood</div>
+    <div><Banner /></div>
   )
 }
 
