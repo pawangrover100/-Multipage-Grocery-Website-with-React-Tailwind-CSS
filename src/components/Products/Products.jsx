@@ -2,7 +2,6 @@ import { useState } from "react";
 import Heading from "../Heading/Heading";
 import ProductsList from "../ProductsList/ProductsList.js";
 import Cards from "../Cards/Cards.jsx";
-import Button from "../Button/Button.jsx";
 import { Link } from "react-router-dom";
 
 function Products() {
@@ -55,10 +54,10 @@ function Products() {
         </div>
         <div className="mt-15 mx-auto w-fit">
           <Link
-            to="/All"
+            to="/allproducts"
             className="bg-gradient-to-b from-orange-400 to-orange-500 text-white px-8 py-3 rounden-lg md:text-lg text:md hover:scale-105 hover:to-orange-600 transition-all duration-300 cursor-pointer"
           >
-            See All
+            view all
           </Link>
         </div>
       </section>
