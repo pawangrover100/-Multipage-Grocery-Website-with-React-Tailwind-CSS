@@ -1,8 +1,9 @@
 import React from 'react'
-
+import CategoryPage from '../CatogeryPage/CategoryPage'
+import bgALL from '../../assets/Grocery Website Assets/all-banner.jpg'
 function AllProducts() {
   return (
-    <div>AllProducts</div>
+    <div> <CategoryPage title="All Products" bgimage={bgALL} /></div>
   )
 }
  

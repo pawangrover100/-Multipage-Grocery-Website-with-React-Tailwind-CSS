@@ -1,9 +1,13 @@
-import React from 'react'
-
+import React from "react";
+import CategoryPage from "../CatogeryPage/CategoryPage";
+import bgDairy from '../../assets/Grocery Website Assets/dairy-banner.jpg'
 function Dairy() {
   return (
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ipsum aperiam porro officia! Laborum, quod nostrum et ab aut officia nulla debitis numquam! Necessitatibus reiciendis sit voluptatibus mollitia nostrum eum.</div>
-  )
+    <div>
+      {" "}
+      <CategoryPage title="Dairy and Eggs" bgimage={bgDairy} />
+    </div>
+  );
 }
 
-export default Dairy
+export default Dairy;
