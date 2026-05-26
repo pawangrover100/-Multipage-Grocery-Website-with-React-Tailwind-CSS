@@ -1,9 +1,10 @@
 import React from 'react'
-import Banner from '../Banner/Banner'
+import CategoryPage from '../CatogeryPage/CategoryPage.jsx'
+
 
 function SeaFood() {
   return (
-    <div><Banner /></div>
+    <div><CategoryPage /></div>
   )
 }
 
