@@ -14,7 +14,7 @@ function Category() {
       description:
         "Fresh, organic produce sourced daily from local farms. Explore a wide range of seasonal fruits and crisp vegetables.",
       image: FruitsCat,
-      path:"/fruits"
+      path: "/fruits",
     },
     {
       id: 2,
@@ -22,7 +22,7 @@ function Category() {
       description:
         "Wholesome dairy products and free-range eggs. From creamy milk and yogurt to artisanal cheeses.",
       image: DairyCat,
-      path:"/dairy"
+      path: "/dairy",
     },
     {
       id: 3,
@@ -30,7 +30,7 @@ function Category() {
       description:
         "High-quality, responsibly sourced meat and seafood. Choose from fresh cuts, marinated options, and more.",
       image: SeaFoodCat,
-      path:"/seafood"
+      path: "/seafood",
     },
   ];
 
