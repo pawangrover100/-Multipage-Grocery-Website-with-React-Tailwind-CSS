@@ -3,6 +3,7 @@ import { IoHeartSharp } from "react-icons/io5";
 import { HiShoppingBag } from "react-icons/hi2";
 import { IoSearch } from "react-icons/io5";
 import { TbMenu2, TbMenu3 } from "react-icons/tb";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
@@ -17,17 +18,17 @@ function Navbar() {
       setIsScrolled(window.scrollY > 10);
     };
     window.addEventListener("scroll", handleScroll);
-    return ()=>window.removeEventListener("scroll", handleScroll);
-  });
+    return () => window.removeEventListener("scroll", handleScroll);
+  },[]);
   return (
     <header
-      className={`bg-white fixed top-0 right-0 left-0 z-50   ${isScrolled ?'drop-shadow-[0_4px_25px_rgba(0,0,0,0.08)]': ''}`}
+      className={`bg-white fixed top-0 right-0 left-0 z-50   ${isScrolled ? "drop-shadow-[0_4px_25px_rgba(0,0,0,0.08)]" : ""}`}
     >
       <nav className="max-w-350 mx-auto px-10 md:h-[14vh] h-[12vh] items-center flex justify-between">
         {/* logo */}
-        <a href="#" className="text-3xl font-semibold">
+        <Link to="/" className="text-3xl font-semibold">
           Gr<span className="text-orange-400  uppercase">o</span>cify
-        </a>
+        </Link>
 
         {/* Desktop menu */}
         <ul className="md:flex items-center gap-x-10 hidden">
@@ -77,7 +78,7 @@ function Navbar() {
               autoComplete="off"
               className="flex-1 h-[5vh] px-3 focus:outline-none"
             />
-            <button className="bg-liner-to-b from-red-500 to-orange-500 text-white rounded-full w-10 h-10  flex justify-center items-center text-xl ">
+            <button className="bg-linear-to-b from-red-500 to-orange-500 text-white rounded-full w-10 h-10  flex justify-center items-center text-xl ">
               <IoSearch />
             </button>
           </div>
@@ -105,12 +106,12 @@ function Navbar() {
           }`}
         >
           <li>
-            <a
-              href="#"
+            <Link
+              to="/"
               className="font-semibold tracking-wider text-orange-500"
             >
               Home
-            </a>
+            </Link>
           </li>
           <li>
             <a
@@ -145,7 +146,7 @@ function Navbar() {
               autoComplete="off"
               className="flex-1 h-[5vh] px-3 focus:outline-none"
             />
-            <button className="bg-liner-to-b from-red-500 to-orange-500 text-white rounded-full w-10 h-10  flex justify-center items-center text-xl ">
+            <button className="bg-linear-to-b from-red-500 to-orange-500 text-white rounded-full w-10 h-10  flex justify-center items-center text-xl ">
               <IoSearch />
             </button>
           </li>

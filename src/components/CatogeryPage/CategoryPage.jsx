@@ -2,8 +2,12 @@ import Banner from "../Banner/Banner";
 import ProductsList from "../ProductsList/ProductsList";
 import Cards from "../Cards/Cards";
 
-function CategoryPage({ title, bgimage }) {
-  const renderProducts = ProductsList.map((product) => {
+function CategoryPage({ title, bgimage, categories = [] }) {
+  let filteredItems = categories.includes("All")
+    ? ProductsList
+    : ProductsList.filter((item) => categories.includes(item.category));
+
+  const renderProducts = filteredItems.map((product) => {
     return (
       <Cards
         key={product.id}
@@ -11,10 +15,9 @@ function CategoryPage({ title, bgimage }) {
         image={product.image}
         name={product.name}
         price={product.price}
-        
       />
     );
-  });
+  })
   return (
     <div>
       <Banner title={title} bgimage={bgimage} />

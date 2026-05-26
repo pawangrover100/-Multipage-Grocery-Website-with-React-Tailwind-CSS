@@ -5,7 +5,7 @@ function Dairy() {
   return (
     <div>
       {" "}
-      <CategoryPage title="Dairy and Eggs" bgimage={bgDairy} />
+      <CategoryPage title="Dairy and Eggs" bgimage={bgDairy} categories={["Dairy"]} />
     </div>
   );
 }
