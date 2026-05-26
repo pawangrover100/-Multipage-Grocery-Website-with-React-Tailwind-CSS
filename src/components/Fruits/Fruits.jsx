@@ -1,9 +1,11 @@
-import React from 'react'
-
+import React from "react";
+import CategoryPage from "../CatogeryPage/CategoryPage.jsx"
 function Fruits() {
   return (
-    <div>i am Fruits</div>
-  )
+    <div>
+      <CategoryPage title="Fruits and Veggies" />
+    </div>
+  );
 }
 
-export default Fruits
+export default Fruits;
